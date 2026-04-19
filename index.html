@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1-Day Tech Event Schedule</title>
+    <title>1-Day Mior Tech Event Schedule</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -93,7 +93,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>1-Day Tech Event: Innovation Summit</h1>
+        <h1>1-Day Mior Tech Event</h1>
         <p style="text-align: center;">Join us for a day of insightful technical talks!</p>
 
         <div class="search-container">
@@ -250,6 +250,17 @@
         categorySearchInput.addEventListener('keyup', (event) => {
             renderSchedule(event.target.value);
         });
+
+        // Compiled JavaScript from src/simple.ts
+        function displayTalkTS(talk) { // Renamed to avoid conflicts if any
+            return `"${talk.title}" by ${talk.speaker} (${talk.duration} minutes)`;
+        }
+        const myTalkTS = {
+            title: "Introduction to TypeScript",
+            speaker: "Mior",
+            duration: 45
+        };
+        console.log("TypeScript example:", displayTalkTS(myTalkTS));
     </script>
 </body>
 </html>

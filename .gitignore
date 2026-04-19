@@ -23,3 +23,6 @@ build/
 
 # Gemini specific files (if any temporary output was created)
 .gemini/tmp/
+
+# TypeScript compiled output
+src/*.js
